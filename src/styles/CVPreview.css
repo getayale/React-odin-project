@@ -1,0 +1,34 @@
+
+.preview-container {
+  background-color: #ffffff;
+}
+
+.preview-container h1 {
+  text-align: center;
+  color: #2563eb;
+  font-size: 24px;
+  margin-bottom: 25px;
+}
+
+.preview-container section {
+  margin-bottom: 25px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.preview-container h2 {
+  color: #2563eb;
+  font-size: 20px;
+  margin-bottom: 12px;
+}
+
+.preview-container h3 {
+  font-size: 17px;
+  margin-bottom: 8px;
+}
+
+.preview-container p {
+  font-size: 14px;
+  line-height: 1.6;
+  margin: 5px 0;
+}

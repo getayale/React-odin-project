@@ -1,0 +1,52 @@
+
+.forms-container h1 {
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: #2563eb;
+}
+
+.forms-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.forms-container label {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.forms-container input,
+.forms-container textarea {
+  width: 100%;
+  padding: 11px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 14px;
+  outline: none;
+}
+
+.forms-container input:focus,
+.forms-container textarea:focus {
+  border-color: #2563eb;
+}
+
+.forms-container textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.forms-container button {
+  padding: 11px 16px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 6px;
+  background-color: #2563eb;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.forms-container button:hover {
+  background-color: #1d4ed8;
+}
