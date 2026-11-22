@@ -1,11 +1,7 @@
 import { useState } from "react";
 
-function Experience(){
-    const [companyName,setCompanyName]=useState("");
-    const [positionTitle,setPositionTitle]=useState("");
-    const [mainResponsibilities,setMainResponsibilities]=useState("");
-    const[startDate,setStartDate]=useState("");
-    const[endDate,setEndDate]=useState("");
+function Experience({companyName,setCompanyName,positionTitle,setPositionTitle,mainResponsibilities,setMainResponsibilities,startDate,setStartDate,endDate,setEndDate}){
+  
 
 const [isSubmitted, setIsSubmitted] = useState(false);
 
@@ -42,10 +38,10 @@ function handleSubmit(event){
            <textarea name="mainResponsibilities" id="mainResponsibilities" value={mainResponsibilities} onChange={(event)=>setMainResponsibilities(event.target.value)} required></textarea>
              
              <label htmlFor="startDate">Start Date</label>
-            <input type="date" id="startDate" value={startDate} min={startDate} required onChange={(event)=>setStartDate(event.target.value)} />
+            <input type="date" id="startDate" value={startDate}  required onChange={(event)=>setStartDate(event.target.value)} />
             
              <label htmlFor="endDate">End Date</label>
-            <input type="date" id="endDate" value={endDate} required onChange={(event)=>setEndDate(event.target.value)} />
+            <input type="date" id="endDate" value={endDate} min={startDate} required onChange={(event)=>setEndDate(event.target.value)} />
 
             <button type="submit">Submit</button>
 

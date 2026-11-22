@@ -1,10 +1,8 @@
 import { useState } from "react";
 
-function Education(){
+function Education({schoolName,setSchoolName,studyTitle,setStudyTitle,studyDate,setStudyDate}){
 
-    const [schoolName,setSchoolName]=useState("");
-    const [studyTitle,setStudyTitle]=useState("");
-    const [studyDate,setStudyDate]=useState("");
+ 
 const [isSubmitted, setIsSubmitted] = useState(false);
 
 function handleSubmit(event){

@@ -1,9 +1,7 @@
 import { useState } from "react";
 
-function GeneralInfo(){
-    const [name,setName]=useState("");
-const [email,setEmail]=useState("");
-const [phone,setPhone]=useState("");
+function GeneralInfo({ name, setName, email, setEmail, phone, setPhone }){
+
 
 const [isSubmitted, setIsSubmitted] = useState(false);
 
